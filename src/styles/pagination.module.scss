@@ -1,0 +1,64 @@
+.pagination_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    box-shadow: 0 2px 1px -1px var(--shadow-color-1),
+    0 1px 1px 0 var(--shadow-color-2), 0 1px 35px 0 var(--shadow-color-3);
+    border-radius: 5px;
+    color: var(--text-color);
+
+    .pagination {
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+        select {
+            border: none;
+            outline: none;
+            background-color: var(--dialog-background);
+            border-radius: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            margin-right: 10px;
+            color: var(--text-color);
+        }
+        button {
+            font-size: 14px;
+            color: var(--disable-text-color);
+        }
+        .current_page {
+            background-color: var(--dialog-background);
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 7px;
+        }
+    }
+}
+
+.paination_caption {
+    font-size: 12px;
+    color: var(--text-color);
+    padding-left: 20px;
+}
+
+@media only screen and (max-width: 990px) {
+    .pagination {
+        font-size: 20px !important;
+        select {
+            font-size: 20px !important;
+        }
+        button {
+            font-size: 20px !important;
+        }
+    }
+
+    .paination_caption {
+        font-size: 16px;
+    }
+}

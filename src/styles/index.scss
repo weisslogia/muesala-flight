@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+  line-height: 1.5;
+}
+:root {
+  --background-color: #eaeaea;
+  --text-color: #333333;
+  --disable-text-color: #989898;
+  --scrollbar-primary-color: #b899ff;
+  --scrollbar-secondary-color: #ffffff;
+  --backdrop-color: #33333363;
+  --dialog-background: #d8d8d8;
+  --shadow-color-1: #0000000a;
+  --shadow-color-2: #d5d3d30f;
+  --shadow-color-3: #0000001f;
+  --border-color: #ffffff;
+  --accent-color: #1565c0;
+  --accent-text: #ffffff
+}
+
+[data-theme = "dark"] {
+  --background-color: #3C3C3C;
+  --text-color: #dedede;
+  --disable-text-color: #acacac;
+  --scrollbar-primary-color: #b899ff;
+  --scrollbar-secondary-color: #ffffff;
+  --backdrop-color: #333333ac;
+  --dialog-background: #676767;
+  --shadow-color-1: #ffffff0a;
+  --shadow-color-2: #d5d3d30f;
+  --shadow-color-3: #9b9b9b1f;
+  --border-color: #5e5e5e;
+  // --accent-color: #c1c1c1;
+  // --accent-text: #1565c0;
+}
+
+.form_error_button {
+  width: 30px !important;
+  min-width: 30px !important;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: var(--scrollbar-primary-color) var(--scrollbar-secondary-color);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--scrollbar-secondary-color);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    border: 1px none var(--scrollbar-secondary-color);
+  }

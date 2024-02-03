@@ -1,0 +1,31 @@
+.container {
+    background-color: var(--background-color);
+    height: 100vh;
+}
+
+.app_bar {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+
+    .menu_container {
+        margin-right: 10px;
+        display: flex;
+        button {
+            color: var(--text-color) !important;
+        }
+        .toggle_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            color: var(--text-color) !important;
+        }
+    }
+}
+
+.username {
+    margin-left: 10px;
+}

@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+
+  .card {
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 2px 1px -1px var(--shadow-color-1),
+      0 1px 1px 0 var(--shadow-color-2), 0 1px 35px 0 var(--shadow-color-3);
+      border-radius: 20px;
+
+      .code {
+        font-size: 80px;
+        font-weight: bolder;
+        color: var(--text-color);
+      }
+
+      .title {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 500;
+        color: var(--text-color);
+      }
+      .description {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: var(--text-color);
+      }
+
+      .actions {
+        width: 100%;
+        display: flex;
+      }
+  }
+}
